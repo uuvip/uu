@@ -2,21 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://uuvip.github.io/post/docker%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2021-09-09T19:31:25+08:00</lastmod>
+    <loc>https://uuvip.github.io/post/github%E9%85%8D%E7%BD%AEtoken/</loc>
+    <lastmod>2021-09-09T22:23:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://uuvip.github.io/post/</loc>
-    <lastmod>2021-09-09T19:31:25+08:00</lastmod>
+    <lastmod>2021-09-09T22:23:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://uuvip.github.io/</loc>
+    <lastmod>2021-09-09T22:23:01+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://uuvip.github.io/post/docker%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2021-09-09T19:31:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
