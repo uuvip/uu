@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>tvbox接口制作 | 班长博客</title>
+<meta name="description" content="记录点滴-温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://uuvip.github.io/favicon.ico?v=1732802044338">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://uuvip.github.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9YTTL19R0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y9YTTL19R0');
+</script>
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://uuvip.github.io">
+        <img class="avatar" src="https://uuvip.github.io/images/avatar.png?v=1732802044338" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://uuvip.github.io">
+        <h1 class="site-title">班长博客</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">tvbox接口制作</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2024-10-21</span>
+            
+          </div>
+          <div class="post-content">
+            <p>项目地址https://hub.docker.com/r/hjdhnx/drpy</p>
+<p>光速资源xml接口：https://api.guangsuapi.com/api.php/provide/vod/at/xml/<br>
+如以上xml/的格式合适，以下是json代码<br>
+{<br>
+&quot;wallpaper&quot;: &quot;http://172.17.0.2:5705/pics&quot;,<br>
+&quot;dr_count&quot;: 42,<br>
+&quot;mode&quot;: 1,<br>
+&quot;spider&quot;: &quot;http://172.17.0.2:5705/files/custom_spider.jar&quot;,<br>
+&quot;sites&quot;: [</p>
+<pre><code>    {
+        &quot;key&quot;: &quot;if101资源&quot;,
+        &quot;name&quot;: &quot;✈️if101(海外推荐)&quot;,
+        &quot;type&quot;: 0,
+        &quot;api&quot;: &quot;https://demo.if101.tv/api.php/provide/vod/at/xml&quot;,
+        &quot;searchable&quot;: 1,
+        &quot;quickSearch&quot;: 0,
+        &quot;filterable&quot;: 0
+    },
+   
+    {
+        &quot;key&quot;: &quot;松鼠资源&quot;,
+        &quot;name&quot;: &quot;松鼠资源(切)&quot;,
+        &quot;type&quot;: 1,
+        &quot;api&quot;: &quot;https://m3u8.songshuzy.com/api.php/provide/vod/&quot;,
+        &quot;searchable&quot;: 1,
+        &quot;quickSearch&quot;: 1
+    },
+	
+ {
+        &quot;key&quot;: &quot;1111&quot;,
+        &quot;name&quot;: &quot;222&quot;,
+        &quot;type&quot;: 1,
+        &quot;api&quot;: &quot;https://cjhwba.com/api.php/provide/vod/&quot;,
+        &quot;searchable&quot;: 1,
+        &quot;quickSearch&quot;: 1
+    },
+	{
+        &quot;key&quot;: &quot;光速资源&quot;,
+        &quot;name&quot;: &quot;光速资源(切)&quot;,
+        &quot;type&quot;: 1,
+        &quot;api&quot;: &quot;https://api.guangsuapi.com/api.php/provide/vod/&quot;,
+        &quot;searchable&quot;: 1,
+        &quot;quickSearch&quot;: 1
+    }
+	
+	
+]}
+</code></pre>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://uuvip.github.io/post/yolov5-huan-jing-an-zhuang/">
+              <h3 class="post-title">
+                下一篇：yolov5环境安装
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">记录点滴-温故而知新</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://uuvip.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>

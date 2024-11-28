@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://uuvip.github.io</id>
+    <title>班长博客</title>
+    <updated>2024-11-28T13:54:10.091Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://uuvip.github.io"/>
+    <link rel="self" href="https://uuvip.github.io/atom.xml"/>
+    <subtitle>记录点滴-温故而知新</subtitle>
+    <logo>https://uuvip.github.io/images/avatar.png</logo>
+    <icon>https://uuvip.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, 班长博客</rights>
+    <entry>
+        <title type="html"><![CDATA[虚拟机VMwareWorkstationPro15.5.0及永久激活密钥]]></title>
+        <id>https://uuvip.github.io/post/xu-ni-ji-vmwareworkstationpro1550-ji-yong-jiu-ji-huo-mi-yao/</id>
+        <link href="https://uuvip.github.io/post/xu-ni-ji-vmwareworkstationpro1550-ji-yong-jiu-ji-huo-mi-yao/">
+        </link>
+        <updated>2024-11-28T13:35:51.000Z</updated>
+        <content type="html"><![CDATA[<p>1、虚拟机VMwareWorkstationPro15.5.0及永久激活密钥<br>
+1,UY758-0RXEQ-M81WP-8ZM7Z-Y3HDA。<br>
+2、UU54R-FVD91-488PP-7NNGC-ZFAX6。<br>
+3、YC74H-FGF92-081VZ-R5QNG-P6RY4。<br>
+4、YC34H-6WWDK-085MQ-JYPNX-NZRA2。<br>
+https://zhidao.baidu.com/question/1840209164254197540.html</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[frpc安装docker]]></title>
+        <id>https://uuvip.github.io/post/frpc-an-zhuang-docker/</id>
+        <link href="https://uuvip.github.io/post/frpc-an-zhuang-docker/">
+        </link>
+        <updated>2024-10-24T18:04:34.000Z</updated>
+        <content type="html"><![CDATA[<p>docker安装frpc<br>
+项目地址https://hub.docker.com/r/snowdreamtech/frpc<br>
+教程https://www.ioiox.com/archives/26.html<br>
+命令：<br>
+docker run --restart=always --network host -d -v /mnt/sda3/frpc/frpc.txt:/etc/frp/frpc.toml --name frpc snowdreamtech/frpc<br>
+frpc.txt:文件<br>
+serverAddr = &quot;frp.qq&quot;<br>
+serverPort = 7000<br>
+auth.method = &quot;token&quot;<br>
+auth.token = &quot;frp1111&quot;</p>
+<p>[[proxies]]<br>
+name = &quot;open5555&quot;</p>
+<h1 id="name-唯一字段不能和服务器上其他用户的服务名重复">name 唯一字段，不能和服务器上其他用户的服务名重复。</h1>
+<p>type = &quot;tcp&quot;</p>
+<h1 id="tcp-协议">tcp 协议</h1>
+<p>localIP = &quot;192.168.1.77&quot;</p>
+<h1 id="需要穿透出去的服务-ip例如我内网的一台-centos7-服务器的-ip">需要穿透出去的服务 IP，例如我内网的一台 centos7 服务器的 IP。</h1>
+<p>localPort = 80</p>
+<h1 id="需要穿透出去的服务端口例如-centos7-服务器的-ssh-登录端口">需要穿透出去的服务端口，例如 centos7 服务器的 ssh 登录端口。</h1>
+<p>remotePort = 5432</p>
+<h1 id="远程穿透端口此端口不能和服务器上其他用户重复也要遵循-frps-服务允许的端口范围">远程穿透端口，此端口不能和服务器上其他用户重复，也要遵循 frps 服务允许的端口范围。</h1>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[tvbox接口制作]]></title>
+        <id>https://uuvip.github.io/post/tvbox-jie-kou-zhi-zuo/</id>
+        <link href="https://uuvip.github.io/post/tvbox-jie-kou-zhi-zuo/">
+        </link>
+        <updated>2024-10-21T14:59:44.000Z</updated>
+        <content type="html"><![CDATA[<p>项目地址https://hub.docker.com/r/hjdhnx/drpy</p>
+<p>光速资源xml接口：https://api.guangsuapi.com/api.php/provide/vod/at/xml/<br>
+如以上xml/的格式合适，以下是json代码<br>
+{<br>
+&quot;wallpaper&quot;: &quot;http://172.17.0.2:5705/pics&quot;,<br>
+&quot;dr_count&quot;: 42,<br>
+&quot;mode&quot;: 1,<br>
+&quot;spider&quot;: &quot;http://172.17.0.2:5705/files/custom_spider.jar&quot;,<br>
+&quot;sites&quot;: [</p>
+<pre><code>    {
+        &quot;key&quot;: &quot;if101资源&quot;,
+        &quot;name&quot;: &quot;✈️if101(海外推荐)&quot;,
+        &quot;type&quot;: 0,
+        &quot;api&quot;: &quot;https://demo.if101.tv/api.php/provide/vod/at/xml&quot;,
+        &quot;searchable&quot;: 1,
+        &quot;quickSearch&quot;: 0,
+        &quot;filterable&quot;: 0
+    },
+   
+    {
+        &quot;key&quot;: &quot;松鼠资源&quot;,
+        &quot;name&quot;: &quot;松鼠资源(切)&quot;,
+        &quot;type&quot;: 1,
+        &quot;api&quot;: &quot;https://m3u8.songshuzy.com/api.php/provide/vod/&quot;,
+        &quot;searchable&quot;: 1,
+        &quot;quickSearch&quot;: 1
+    },
+	
+ {
+        &quot;key&quot;: &quot;1111&quot;,
+        &quot;name&quot;: &quot;222&quot;,
+        &quot;type&quot;: 1,
+        &quot;api&quot;: &quot;https://cjhwba.com/api.php/provide/vod/&quot;,
+        &quot;searchable&quot;: 1,
+        &quot;quickSearch&quot;: 1
+    },
+	{
+        &quot;key&quot;: &quot;光速资源&quot;,
+        &quot;name&quot;: &quot;光速资源(切)&quot;,
+        &quot;type&quot;: 1,
+        &quot;api&quot;: &quot;https://api.guangsuapi.com/api.php/provide/vod/&quot;,
+        &quot;searchable&quot;: 1,
+        &quot;quickSearch&quot;: 1
+    }
+	
+	
+]}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[yolov5环境安装]]></title>
+        <id>https://uuvip.github.io/post/yolov5-huan-jing-an-zhuang/</id>
+        <link href="https://uuvip.github.io/post/yolov5-huan-jing-an-zhuang/">
+        </link>
+        <updated>2024-06-07T16:44:18.000Z</updated>
+        <content type="html"><![CDATA[<p>安装miniconda清华大学开源软件镜像站<br>
+版本https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-py38_22.11.1-1-Windows-x86_64.exe<br>
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/</p>
+<p>1,创建一个名为yolov5的环境，指定python=3.8为3.8版本<br>
+conda create -n yolov5 python=3.8</p>
+<p>2,激活 yolov5环境<br>
+conda activate yolov5</p>
+<p>3,查看当前已经安装的包<br>
+pip list</p>
+<p>4,安装pytorch.org在激活的yolov5环境中<br>
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu</p>
+<p>5,下载yolov5项目包<br>
+https://github.com/ultralytics/yolov5</p>
+<p>6,进入下载解压的文件里<br>
+cd C:\yolov5-master</p>
+<p>7,安装依赖<br>
+pip install -r requirements.txt</p>
+<p>8,安装完成后跑一下示例看看<br>
+python detect.py<br>
+跑监控rtsp地址用双引号&quot;rtsp://admin:123@192.168.1.9:554/onvif1&quot;</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docker安装zerotier]]></title>
+        <id>https://uuvip.github.io/post/docker-an-zhuang-zerotier/</id>
+        <link href="https://uuvip.github.io/post/docker-an-zhuang-zerotier/">
+        </link>
+        <updated>2024-06-05T16:52:25.000Z</updated>
+        <content type="html"><![CDATA[<p>docker安装zerotier<br>
+https://xyzbz.cn/archives/1046/<br>
+https://hub.docker.com/r/bltavares/zerotier<br>
+拉取镜像<br>
+docker pull docker.nju.edu.cn/bltavares/zerotier<br>
+启动镜像<br>
+docker run --name myzerotier --net=host --cap-add NET_ADMIN --cap-add=SYS_ADMIN -v /mnt/sda4/docker/zerotier:/var/lib/zerotier-one --device /dev/net/tun docker.nju.edu.cn/bltavares/zerotier:latest<br>
+加入网络<br>
+docker exec myzerotier zerotier-cli join 14244a1e71ff444</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[大华监控恢复出厂]]></title>
+        <id>https://uuvip.github.io/post/da-hua-jian-kong-hui-fu-chu-han/</id>
+        <link href="https://uuvip.github.io/post/da-hua-jian-kong-hui-fu-chu-han/">
+        </link>
+        <updated>2024-05-03T12:25:42.000Z</updated>
+        <content type="html"><![CDATA[<p>打开前盖后，在拆里面的3颗固定螺丝。镜头的背面就有2个洞是短接点<br>
+1.拆开完后，先给机子通电3-5分钟，让机子完全启动后，再用短接的细铁丝，在短接点，短接5-10秒松开。等待3分钟机子自己重启，就可以在浏览器输入192.168.1.108，使用admin/admin进入后，马上修改密码，看到有画面就可以了。<br>
+2.最后，断电，把机子装回去！<br>
+<img src="https://uuvip.github.io/post-images/1714739867038.jpg" alt="" loading="lazy"><br>
+<img src="https://uuvip.github.io/post-images/1714739878739.jpg" alt="" loading="lazy"><br>
+<img src="https://uuvip.github.io/post-images/1714739885016.jpg" alt="" loading="lazy"><br>
+图三2个洞为短接点，3-5秒松开<br>
+rtsp://admin:zxcv1234@192.168.1.108:554/cam/realmonitor?channel=1&amp;subtype=1<br>
+rtsp://admin:zxcv1234@192.168.1.108:554/cam/realmonitor?channel=1&amp;subtype=0<br>
+说明: 用大华云联，手机就可以看<br>
+channel: 通道号，起始为1。例如通道2，则为channel=2。<br>
+subtype: 码流类型，主码流为0（即subtype=0），辅码流为1（即subtype=1</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[N1安装Frigate实现IPcamera自动检测人脸识别自动化]]></title>
+        <id>https://uuvip.github.io/post/n1-an-zhuang-frigate-shi-xian-ipcamera-zi-dong-jian-ce-ren-lian-shi-bie-zi-dong-hua/</id>
+        <link href="https://uuvip.github.io/post/n1-an-zhuang-frigate-shi-xian-ipcamera-zi-dong-jian-ce-ren-lian-shi-bie-zi-dong-hua/">
+        </link>
+        <updated>2024-04-25T18:15:33.000Z</updated>
+        <summary type="html"><![CDATA[<p>N1启动成功了</p>
+<p>docker run -d <br>
+--name frigate <br>
+--restart=unless-stopped <br>
+--mount type=tmpfs,target=/tmp/cache,tmpfs-size=1000000000 <br>
+--device /dev/bus/usb:/dev/bus/usb <br>
+--device /dev/dri/card0 <br>
+--shm-size=64m <br>
+-v /mnt/sda4/gongx/media:/media/frigate <br>
+-v /mnt/sda4/gongx/config:/config <br>
+-v /etc/localtime:/etc/localtime:ro <br>
+-e FRIGATE_RTSP_PASSWORD='password' <br>
+-p 5000:5000 <br>
+-p 8554:8554 <br>
+-p 8555:8555/tcp <br>
+-p 8555:8555/udp <br>
+ghcr.io/blakeblackshear/frigate:stable</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>N1启动成功了</p>
+<p>docker run -d <br>
+--name frigate <br>
+--restart=unless-stopped <br>
+--mount type=tmpfs,target=/tmp/cache,tmpfs-size=1000000000 <br>
+--device /dev/bus/usb:/dev/bus/usb <br>
+--device /dev/dri/card0 <br>
+--shm-size=64m <br>
+-v /mnt/sda4/gongx/media:/media/frigate <br>
+-v /mnt/sda4/gongx/config:/config <br>
+-v /etc/localtime:/etc/localtime:ro <br>
+-e FRIGATE_RTSP_PASSWORD='password' <br>
+-p 5000:5000 <br>
+-p 8554:8554 <br>
+-p 8555:8555/tcp <br>
+-p 8555:8555/udp <br>
+ghcr.io/blakeblackshear/frigate:stable</p>
+<!-- more -->
+<p>视频说明<br>
+https://www.bilibili.com/video/BV1X3411p7Gq/?spm_id_from=333.880.my_history.page.click&amp;vd_source=744cd40df28613de0c2d71b341eb9bd1</p>
+<!-- more -->
+<p>https://www.truenasscale.com/2022/03/26/811.html</p>
+<!-- more -->
+<p>在安装之前我们需要先写一个配置文件</p>
+<p>大家自行创建存放frigate的数据集或者文件夹，在文件夹下创建config.yml如下</p>
+<!-- more -->
+<p>以上启动失败就是配置文件config.yml写错了。可以用简单的配置试试<br>
+mqtt:<br>
+enabled: False</p>
+<p>birdseye:<br>
+enabled: False<br>
+mode: motion<br>
+width: 1280<br>
+height: 720<br>
+objects:<br>
+track:<br>
+- person</p>
+<h1 id="-car">- car</h1>
+<h1 id="-motorcyle">- motorcyle</h1>
+<h1 id="-cat">- cat</h1>
+<h1 id="-dog">- dog</h1>
+<pre><code>    # Optional: list of objects to track from labelmap.txt (default: shown below)
+</code></pre>
+<p>ffmpeg:<br>
+output_args:<br>
+record: -f segment -segment_time 10 -segment_format mp4 -reset_timestamps 1 -strftime 1 -c:v copy -c:a aac<br>
+cameras:<br>
+cam:<br>
+mqtt:<br>
+timestamp: False<br>
+bounding_box: False<br>
+crop: True<br>
+quality: 100<br>
+height: 500<br>
+ffmpeg:<br>
+inputs:<br>
+- path: rtsp://192.168.1.6:554/onvif1<br>
+roles:<br>
+- detect<br>
+- rtmp<br>
+- record</p>
+<p>detect:<br>
+height: 720<br>
+width: 1280<br>
+fps: 5<br>
+record:<br>
+enabled: True<br>
+# Optional: timeout for highest scoring image before allowing it<br>
+# to be replaced by a newer image. (default: shown below)<br>
+retain:<br>
+days: 3<br>
+snapshots:<br>
+enabled: True</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[视频抽帧]]></title>
+        <id>https://uuvip.github.io/post/shi-pin-chou-zheng/</id>
+        <link href="https://uuvip.github.io/post/shi-pin-chou-zheng/">
+        </link>
+        <updated>2024-04-23T12:18:10.000Z</updated>
+        <content type="html"><![CDATA[<p>import cv2</p>
+<h1 id="视频文件路径">视频文件路径</h1>
+<p>video_path = 'C:/Users/qinpc/Downloads/huayuan-20240419-184900.mp4'</p>
+<h1 id="创建videocapture对象">创建VideoCapture对象</h1>
+<p>cap = cv2.VideoCapture(video_path)</p>
+<h1 id="获取视频的帧速率">获取视频的帧速率</h1>
+<p>fps = cap.get(cv2.CAP_PROP_FPS)</p>
+<h1 id="设置每秒抽取的帧数这里我们抽取每秒1帧数字越大抽取的图片越多">设置每秒抽取的帧数，这里我们抽取每秒1帧,数字越大抽取的图片越多，</h1>
+<p>frames_to_extract = 1</p>
+<h1 id="计算抽取每一帧的间隔">计算抽取每一帧的间隔</h1>
+<p>frame_interval = int(round(fps / frames_to_extract))</p>
+<h1 id="帧计数器">帧计数器</h1>
+<p>frame_count = 0</p>
+<h1 id="检查视频是否成功打开">检查视频是否成功打开</h1>
+<p>if cap.isOpened():<br>
+# 循环读取视频帧<br>
+success = True<br>
+while success:<br>
+success, frame = cap.read()<br>
+if success:<br>
+# 如果是需要的帧，进行处理<br>
+if frame_count % frame_interval == 0:<br>
+# 这里可以添加你的帧处理代码<br>
+cv2.imwrite(f'frame_{frame_count // frame_interval}.png', frame)</p>
+<pre><code>        frame_count += 1
+    else:
+        break
+# 释放VideoCapture对象
+cap.release()
+</code></pre>
+<h1 id="关闭所有窗口">关闭所有窗口</h1>
+<p>cv2.destroyAllWindows()</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[模型训练yolov5-master]]></title>
+        <id>https://uuvip.github.io/post/mo-xing-xun-lian-yolov5-master/</id>
+        <link href="https://uuvip.github.io/post/mo-xing-xun-lian-yolov5-master/">
+        </link>
+        <updated>2024-04-23T10:49:52.000Z</updated>
+        <summary type="html"><![CDATA[<p>源码https://github.com/ultralytics/yolov5下载好<br>
+用labelimg工具标记要训练的物体，图越多，训练次数越多，效果才好<br>
+标记完后<br>
+整理文件夹，结构<br>
+需要2个文件名，images和labels 就是标记好的图片和标签，放这2个放在任意一个文件里面，放在yolo工作目录里，如图<br>
+<img src="https://uuvip.github.io/post-images/1713869909055.png" alt="" loading="lazy"></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>源码https://github.com/ultralytics/yolov5下载好<br>
+用labelimg工具标记要训练的物体，图越多，训练次数越多，效果才好<br>
+标记完后<br>
+整理文件夹，结构<br>
+需要2个文件名，images和labels 就是标记好的图片和标签，放这2个放在任意一个文件里面，放在yolo工作目录里，如图<br>
+<img src="https://uuvip.github.io/post-images/1713869909055.png" alt="" loading="lazy"></p>
+<!-- more -->
+<p>下面开始修改配置文件<br>
+在项目里面找到data\coco128.yaml文件，复制一份出来修改文件名为huoji128.yaml<br>
+在修改huoji128.yaml文件的内容 如下<br>
+<img src="https://uuvip.github.io/post-images/1713870205393.png" alt="" loading="lazy"><br>
+就是：去掉多余的类目，保留自己的一个训练类目，还有修改图里面3个路径</p>
+<!-- more -->
+<p>接下来修改train.py文件，大约518行 date路径为：data/huoji128.yaml，就是我们刚才编辑的yaml文件<br>
+<img src="https://uuvip.github.io/post-images/1713870621506.png" alt="" loading="lazy"></p>
+<!-- more -->
+<p>修改训练次数--epochs&quot;, type=int, default=100次</p>
+<p>运行，，train.py文件，开始训练了</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PHP图片倒序排列]]></title>
+        <id>https://uuvip.github.io/post/php-tu-pian-dao-xu-pai-lie/</id>
+        <link href="https://uuvip.github.io/post/php-tu-pian-dao-xu-pai-lie/">
+        </link>
+        <updated>2024-04-21T15:35:40.000Z</updated>
+        <content type="html"><![CDATA[<?php
+
+// 获取图片文件列表
+$files = scandir('pic');
+
+// 过滤掉非图片文件
+$pic = array_filter($files, function($file) {
+    return is_file("pic/$file") && in_array(pathinfo($file, PATHINFO_EXTENSION), ['jpg', 'jpeg', 'png', 'gif']);
+});
+
+// 按时间倒序排列图片
+usort($pic, function($a, $b) {
+    return filemtime("pic/$a") < filemtime("pic/$b");
+});
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>相册</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+<pre><code>    .gallery li {
+        width: 33%;
+        margin: 10px;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+&lt;/style&gt;
+</code></pre>
+</head>
+<body>
+    <h1>相册</h1>
+    <ul class="gallery">
+        <?php foreach ($pic as $image): ?>
+            <li>
+                <a href="pic/<?php echo $image; ?>">
+                    <img src="pic/<?php echo $image; ?>" alt="<?php echo $image; ?>">
+                </a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</body>
+</html>
+]]></content>
+    </entry>
+</feed>
